@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Computer Science Ph.D. student at Cornell University. My advisor is [Steve Marschner](http://www.cs.cornell.edu/~srm/). My research interest is in Computer Graphics, primarily in Physically-based Rendering. Before coming to Cornell, I got my Bachelor of Science in Applied Mathematics from University of California, Los Angeles (UCLA**.
+I'm a Computer Science Ph.D. student at Cornell University. My advisor is [Steve Marschner](http://www.cs.cornell.edu/~srm/). My research interest is in Computer Graphics, primarily in Physically-based Rendering. Before coming to Cornell, I got my Bachelor of Science in Applied Mathematics from University of California, Los Angeles (UCLA).
 
 Publications 
 ======
