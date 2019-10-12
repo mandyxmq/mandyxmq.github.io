@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mengqi (Mandy) Xia"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Mengqi (Mandy) Xia"
 description              : &description ""
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Mengqi (Mandy) Xia"
   avatar           : "profile.png"
-  bio              : "Cornell CS Ph.D. Student"
+  bio              : "Cornell Computer Science Ph.D. Student"
   location         : 
   employer         :
   pubmed           : 
