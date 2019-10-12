@@ -14,7 +14,7 @@ Publications
 ======
 
 **Gaussian product1 sampling for rendering layered materials**<br/>
-**Mengqi (Mandy) Xia**, Bruce Walter, Christophe Hery, Steve Marschner<br/>
+**Mengqi (Mandy) Xia**, Bruce Walter, Christophe Hery, and Steve Marschner<br/>
 Computer Graphics Forum, in press, 2019.
 
 **An efficient primal-dual method for the obstacle problem**<br/>
