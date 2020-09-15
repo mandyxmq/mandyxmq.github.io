@@ -36,10 +36,10 @@
             <div class="product-tagline text-center"><sup>1</sup>Cornell University, <sup>2</sup>University of Michigan</div>
             <br>
             <center>
-            <h4 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="assets/WaveOpticsFiber_sa20.pdf" class="text-white">Paper</a></span></h4>
-            <h4 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Supplemental</a></span></h4>
-            <h4 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Code (coming soon)</a></span></h4>
-            <h4 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Video (coming soon)</a></span></h4>
+            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="assets/WaveOpticsFiber_sa20.pdf" class="text-white">Paper</a></span></h5>
+            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Supplemental</a></span></h5>
+            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Code (coming soon)</a></span></h5>
+            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Video (coming soon)</a></span></h5>
             </center>
             <br>
             <figure>
@@ -52,7 +52,8 @@
             </center>
             </figure>
             <br>
-            <div class="desc text-justify"> <b>Abstract: </b>Existing fiber scattering models in rendering are all based on tracing rays through fiber geometry, but for small fibers diffraction and interference are non-negligible, so relying on ray optics can result in appearance errors.  This paper presents the first wave optics based fiber scattering model, introducing an azimuthal scattering function that comes from a full wave simulation.   
+            <h3> Abstract</h3>
+            <div class="desc text-justify"> Existing fiber scattering models in rendering are all based on tracing rays through fiber geometry, but for small fibers diffraction and interference are non-negligible, so relying on ray optics can result in appearance errors.  This paper presents the first wave optics based fiber scattering model, introducing an azimuthal scattering function that comes from a full wave simulation.   
                 Solving Maxwell's equations for a straight fiber of constant cross section illuminated by a plane wave reduces to solving for a 3D electromagnetic field in a 2D domain, and 
                 our fiber scattering simulator solves this 2.5D problem efficiently using the boundary element method (BEM).  From the resulting fields we compute extinction, absorption, and far-field scattering distributions, which we use to simulate shadowing and scattering by fibers in a path tracer. We validate our path tracer against the wave simulation and the simulation against a measurement of diffraction from a single textile fiber. Our results show that our approach can reproduce a wide range of fibers with different sizes, cross sections, and material properties, including textile fibers, animal fur, and human hair.  The renderings include color effects, softening of sharp features, and strong forward scattering that are not predicted by traditional ray-based models, though the two approaches produce similar appearance for complex fiber assemblies under many conditions.</div>
         </div>
@@ -60,10 +61,18 @@
 
 
     <section class="product-hero-section">
-        <center>
-            <iframe width="1600" height="450"
-                    src="https://www.youtube.com/embed/TUN6DaUc1bk">
+        <div class="container">
+            <h3> Additional Results</h3>
+            <iframe width="1200" height="337.5"
+                    src="https://www.youtube.com/embed/TUN6DaUc1bk" frameborder="0" allowfullscreen>
+                name="orbit_video"></iframe>
             </iframe>
+            <center>
+        </center>
+        <div class="desc text-justify">
+            Compared to the wave optics predictions, the previous ray model has less energy in the forward scattering direction and this results in appearance differences, especially in the backlit setting. In this video we show one frame of the orbit renderings with a head of curly black hair under an area light and an environment light. The ray result is lacking energy near the forward direction and results in a dimmer appearance on the edge of the hair model. 
+        </div>
+        </div>
     </section>
 
     <section class="product-hero-section">
