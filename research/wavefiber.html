@@ -24,7 +24,8 @@
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-
+    <link href="assets/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    -->
 </head> 
 
 <body>       
@@ -37,16 +38,22 @@
             <br>
             <center>
             <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="assets/WaveOpticsFiber_sa20.pdf" class="text-white">Paper</a></span></h5>
-            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Supplemental</a></span></h5>
+            <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Tech doc</a></span></h5>
             <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Code (coming soon)</a></span></h5>
             <h5 class="list-inline-item"><span class="badge badge-secondary badge-pill"><a href="wavefiber.html" class="text-white">Video (coming soon)</a></span></h5>
             </center>
             <br>
             <figure>
                 <center>
-                    <img src="assets/images/render/spiderweb_photo.png" alt="spiderweb_photo" width="374" height="300">
-                    <img src="assets/images/render/spiderweb_wave.png" alt="spiderweb_ray" width="300" height="300">
+                    <a href="assets/images/render/spiderweb_photo.png">
+                        <img src="assets/images/render/spiderweb_photo.png" alt="spiderweb_photo" width="374" height="300">
+                    </a>
+                    <a href="assets/images/render/spiderweb_wave.png">
+                        <img src="assets/images/render/spiderweb_wave.png" alt="spiderweb_ray" width="300" height="300">
+                    </a>
+                    <a href="assets/images/render/spiderweb_ray.png">
                     <img src="assets/images/render/spiderweb_ray.png" alt="spiderweb_wave" width="300" height="300">
+            </a>
                 </center>
                 <figcaption>Fig. 1. This figure shows a spiderweb iridescence example. The left image is a photograph of this effect by <a href="https://www.passionatephotos.net/" >Marianna Armata</a>. The middle image is rendered using our wave-based BCSDF and the image on the right is rendered using a previous ray-based BCSDF. Our wave optics fiber scattering model is able to produce strong color effects with hues similar to the photograph while the ray model produces a colorless appearance. Similar iridescence effects can also be seen in eyelashes or <a href="https://epod.usra.edu/blog/2011/05/iridescence-in-a-dandelion-seed-head.html"> a Dandelion seed head.</a>  </figcaption>
             </center>
@@ -63,12 +70,11 @@
     <section class="product-hero-section">
         <div class="container">
             <h3> Additional Results</h3>
+            <h6> 1. Forward scattering </h6>
             <iframe width="1200" height="337.5"
                     src="https://www.youtube.com/embed/TUN6DaUc1bk" frameborder="0" allowfullscreen>
                 name="orbit_video"></iframe>
             </iframe>
-            <center>
-        </center>
         <div class="desc text-justify">
             Compared to the wave optics predictions, the previous ray model has less energy in the forward scattering direction and this results in appearance differences, especially in the backlit setting. We show a video of orbit renderings with a head of curly black hair under an area light and an environment light. The ray result is lacking energy near the forward direction and results in a dimmer appearance on the edge of the hair model. 
         </div>
@@ -76,21 +82,84 @@
     </section>
 
     <section class="product-hero-section">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="container">
+            <h6> 2. Interactive comparison </h6>
+            <center>
+                <div class="twentytwenty-container" style="width: 400px; height: 400px">
+	                  <img src="assets/images/render/straight_black_wave.png" alt="Wave" class="img-responsive">
+	                  <img src="assets/images/render/straight_black_ray.png" alt="Ray" class="img-responsive">
+	              </div>
+                <p>Black hair fibers have an elliptical cross section with semi-major axis 19um and semi-minor axis 10um.</p>
+                <div class="twentytwenty-container" style="width: 400px; height: 400px">
+	                  <img src="assets/images/render/straight_red_wave.png" alt="Wave" class="img-responsive">
+	                  <img src="assets/images/render/straight_red_ray.png" alt="Ray" class="img-responsive">
+	              </div>
+                <p>Red hair fibers have an elliptical cross section with semi-major axis 16um and semi-minor axis 10um.</p>
+            <div class="twentytwenty-container" style="width: 600px; height: 720px">
+	              <img src="assets/images/render/hamster_wave_256.png" alt="Wave" class="img-responsive" >
+	              <img src="assets/images/render/hamster_ray_256.png" alt="Ray" class="img-responsive">
+	          </div>
+            <p>Hamster fur has six different colors of elliptical fibers with semi-major axis 16um and semi-minor axis 10um.</p><br>
+
+            <div class="twentytwenty-container" style="width: 700px; height: 700px">
+	          <img src="assets/images/render/silksofa_wave.png" alt="Wave" class="img-responsive" >
+	          <img src="assets/images/render/silksofa_ray.png" alt="Ray" class="img-responsive">
+	      </div>
+        <p>Silk sofa</p>
+        <div class="twentytwenty-container" style="width: 700px; height: 700px">
+	          <img src="assets/images/render/poly1_wave.png" alt="Wave" class="img-responsive" >
+	          <img src="assets/images/render/poly1_ray.png" alt="Ray" class="img-responsive">
+	      </div>
+        <p>Polyester sofa (type 1)</p>
+        <div class="twentytwenty-container" style="width: 700px; height: 700px">
+	          <img src="assets/images/render/poly2_wave.png" alt="Wave" class="img-responsive" >
+	          <img src="assets/images/render/poly2_ray.png" alt="Ray" class="img-responsive">
+	      </div>
+        <p>Polyester sofa (type 2)</p>
+            </center>
+
+
+        </div>
+
     </section>
 
     <section class="product-hero-section">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="container">
+            <h6> 3. Gaussian beam </h6>
+            <center>
+                <a href="assets/images/render/incidence_5r_1um.png">
+                    <img src="assets/images/render/incidence_5r_1um.png" alt="spiderweb_photo" width="330" height="245">
+                </a>
+                <a href="assets/images/render/scattering_5r_1um.png">
+                    <img src="assets/images/render/scattering_5r_1um.png" alt="spiderweb_ray" width="330" height="245">
+                </a>
+                <a href="assets/images/render/total_5r_1um.png">
+                    <img src="assets/images/render/total_5r_1um.png" alt="spiderweb_wave" width="330" height="245">
+                </a>
+                <a href="assets/images/render/incidence_0.1r_10um.png">
+                    <img src="assets/images/render/incidence_0.1r_10um.png" alt="spiderweb_photo" width="330" height="245">
+                </a>
+                <a href="assets/images/render/scattering_0.1r_10um.png">
+                    <img src="assets/images/render/scattering_0.1r_10um.png" alt="spiderweb_ray" width="330" height="245">
+                </a>
+                <a href="assets/images/render/total_0.1r_10um.png">
+                    <img src="assets/images/render/total_0.1r_10um.png" alt="spiderweb_wave" width="330" height="245">
+                </a>
+            </center>
+            <div class="desc text-justify">
+                We illustrate two examples of a Gaussian beam illuminating a circular cross section. The three columns show the real part of the z component of the incident electric field, the scattered field and the total field respectively.
+            </div>
+        </div>
+    </section>
+
+    <section class="product-hero-section">
+        <div class="container">
+            <h3> Acknowledgement</h3>
+            <div class="desc text-justify">
+                The authors would like to thank Zechen Zhang and Francesco Monticone for their helpful discussion on this project. We thank Sitian Chen for generating the woven pattern used in the sofa scene and Lingqi Yan for letting us use the converted hamster scene. We would also like to thank Under Armour for providing the textile sample. This work was supported by the National Science Foundation under grant IIS-1909467.
+            </div>
+            <br>
+        </div>
     </section>
 
 
@@ -112,7 +181,14 @@
     <script src="assets/plugins/owlcarousel/dist/owl.carousel.min.js"></script> 
     <script src="assets/plugins/jquery.scrollTo.min.js"></script> 
     <script src="assets/plugins/aos/aos.js"></script> 
-    <script src="assets/js/main.js"></script>  
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+
+    <script>
+     $(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+    </script>
 
 </body>
 </html> 
