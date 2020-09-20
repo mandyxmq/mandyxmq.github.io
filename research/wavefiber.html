@@ -41,7 +41,6 @@
             <div>
             <center>
 		        <h1 class="product-name text-center">A Wave Optics Based Fiber Scattering Model</h1>
-            <div class="product-tagline text-center"> SIGGRAPH Asia 2020</div>
 		        <div class="product-tagline text-center">
                 <a href="https://mandyxmq.github.io" style="color:rgb(68, 150, 236);">Mengqi (Mandy) Xia<sup>1</sup></a>,
                 <a href="https://www.graphics.cornell.edu/~bjw/" style="color:rgb(68, 150, 236);">Bruce Walter<sup>1</sup></a>,
@@ -50,6 +49,8 @@
                 <a href="https://www.cs.cornell.edu/~srm/" style="color:rgb(68, 150, 236);">Steve Marschner<sup>1</sup></a>
             </div>
             <div class="product-tagline text-center"><sup>1</sup>Cornell University, <sup>2</sup>University of Michigan</div>
+            <br>
+            <div class="product-tagline text-center"> <b> ACM Transactions on Graphics (SIGGRAPH Asia 2020)</b></div>
             <br>
             <p><button class="w3-btn w3-blue"><a href="assets/WaveOpticsFiber_sa20.pdf" class="text-white">Paper</a></button>
             <button class="w3-btn w3-blue"><a href="wavefiber.html" class="text-white">Tech doc</a></button>
@@ -73,35 +74,34 @@
            </div><br><br>
 
            <div>
-               <h3> Additional Results</h3>
+               <h3> Results</h3>
+
                <div>
-                   <h5> 1. Forward scattering </h5>
+                   <h5> 1. Forward scattering. </h5>
                    <center>
                        <iframe width="900" height="253"
                                src="https://www.youtube.com/embed/TUN6DaUc1bk" frameborder="0" allowfullscreen>
                            name="orbit_video"></iframe>
                        </iframe>
                    </center>
-                       <figcaption>
-                           Compared to the wave optics predictions, the previous ray model has less energy in the forward scattering direction and this results in appearance differences, especially in the backlit setting. We show a video of orbit renderings with a head of curly black hair under an area light and an environment light. The ray result is lacking energy near the forward direction and results in a dimmer appearance on the edge of the hair model. 
-                       </figcaption>
+                   <figcaption>
+                       Compared to the wave optics predictions, the previous ray model has less energy in the forward scattering direction and this results in appearance differences, especially in the backlit setting. We show a video of orbit renderings with a head of curly black hair under an area light and an environment light. The ray result is lacking energy near the forward direction and results in a dimmer appearance on the edge of the hair model. When the light source rotates to be partially blocked by the hair model, the differences between the two models are most obvious. 
+                   </figcaption>
                </div><br>
 
                <div>
-                   <h5> 2. Interactive comparison </h5>
+                   <h5> 2. Highlight shape. </h5>
                    <center>
-                       <div class="twentytwenty-container" style="width: 400px; height: 400px">
-	                         <img src="assets/images/render/straight_black_wave.png" alt="Wave" class="img-responsive">
-	                         <img src="assets/images/render/straight_black_ray.png" alt="Ray" class="img-responsive">
-	                     </div>
-                       <div>The black hair fibers have an elliptical cross section with semi-major axis 19um and semi-minor axis 10um.</div><br>
+                       <img src="assets/images/render/redhair.png" alt="redhair">
+                   </center>
+                   <figcaption>
+                       This figure shows renderings of a head of elliptical red hair lit by an environment light. We show the full-scale render using our wave BCSDF on the top left. On the bottom left, we zoom in on hair ends and show the comparison between the ray and the wave renders. On the right, we zoom in near the root of hair. Comparing to the ray render, the wave render has different highlight patterns and a softer appearance.
+                   </figcaption>
+               </div><br>
 
-                       <div class="twentytwenty-container" style="width: 400px; height: 400px">
-	                         <img src="assets/images/render/straight_red_wave.png" alt="Wave" class="img-responsive">
-	                         <img src="assets/images/render/straight_red_ray.png" alt="Ray" class="img-responsive">
-	                     </div>
-                       <div>The red hair fibers have an elliptical cross section with semi-major axis 16um and semi-minor axis 10um.</div><br>
-
+               <div>
+                   <h5> 3. Interactive comparison. </h5>
+                   <center>
                        <div class="twentytwenty-container" style="width: 600px; height: 720px">
 	                         <img src="assets/images/render/hamster_wave_256.png" alt="Wave" class="img-responsive" >
 	                         <img src="assets/images/render/hamster_ray_256.png" alt="Ray" class="img-responsive">
@@ -131,7 +131,7 @@
 
 
                <div>
-                   <h5> 3. Gaussian beam </h5>
+                   <h5> 4. Gaussian beam </h5>
                    <img src="assets/images/render/beam.png" alt="beam">
                    <div class="desc text-justify">
                        We illustrate two examples of a Gaussian beam illuminating a circular cross section. The three columns show the real part of the z component of the incident electric field, the scattered field and the total field respectively.
