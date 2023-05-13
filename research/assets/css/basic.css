@@ -7,3 +7,18 @@
     height: auto;
     margin: auto;
 }
+
+.report-preview {
+    display: inline-block;
+    margin: 6px 3px;
+    text-align: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-size: 20px; */
+    font-weight: normal;
+    width: 200px;
+}
+
+.report-thumb {
+    height: 144px;
+    width: auto;
+}

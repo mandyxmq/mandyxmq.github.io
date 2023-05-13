@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blonde hair photo</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="report.css">
+    <script src="ImageBox.js"></script>
+</head>
+
+<script type="text/javascript">
+    var imageBoxes = [
+        {
+            "elements": [
+                "hairphoto.jpg",
+            ],
+            "enableInsets": true,
+            "insetSize": 400,
+            "insetZoom": 2,
+            "names": [
+                "photo #1",
+            ],
+            "title": ""
+        }
+    ];     
+
+    function setup() {
+        var content = document.getElementById("content");
+        for (var i = 0; i < imageBoxes.length; i++)
+            new ImageBox(content, imageBoxes[i]);
+    }    
+
+</script>
+
+<body onload="setup();">
+    <div class="content" id="content">
+        <font size="4">
+            <h1>
+                Blonde hair under sunlight
+            </h1>
+            The photograph of blonde hair were taken in sunlight using a macro lens. You can hover over the images and observe the subtle colored glints in insets.
+            <br>
+        </font>
+    </div>
+</body>
+</html>

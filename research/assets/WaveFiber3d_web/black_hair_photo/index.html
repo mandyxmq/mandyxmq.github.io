@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black hair photo</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="report.css">
+    <script src="ImageBox.js"></script>
+</head>
+
+<script type="text/javascript">
+    var imageBoxes = [
+        {
+            "elements": [
+                "hairphoto.jpg",
+            ],
+            "enableInsets": true,
+            "insetSize": 600,
+            "insetZoom": 2,
+            "names": [
+                "photo #1",
+            ],
+            "title": ""
+        },
+        {
+            "elements": [
+                "hairphoto_zoom.jpg",
+            ],
+            "enableInsets": true,
+            "insetSize": 600,
+            "insetZoom": 2,
+            "names": [
+                "photo #2",
+            ],
+            "title": ""
+        }
+    ];     
+
+    function setup() {
+        var content = document.getElementById("content");
+        for (var i = 0; i < imageBoxes.length; i++)
+            new ImageBox(content, imageBoxes[i]);
+    }    
+
+</script>
+
+<body onload="setup();">
+    <div class="content" id="content">
+        <font size="4">
+            <h1>
+                Black hair under sunlight
+            </h1>
+            The photographs of black hair were taken in sunlight using a macro lens.
+            <br>
+        </font>
+    </div>
+</body>
+</html>

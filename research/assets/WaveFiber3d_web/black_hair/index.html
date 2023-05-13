@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RJMLT Supplemental Material">
+    <title>Black hair render</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="report.css">
+    <script src="ImageBox.js"></script>
+    <script src="VideoBox.js"></script>
+</head>
+
+<script type="text/javascript">
+    var imageBoxes = [
+        {
+            "elements": [
+                "straighthair_0_may1.png",
+                "straighthair_2d.png"
+            ],
+            "enableInsets": true,
+            "insetSize": 400,
+            "insetZoom": 1.3,
+            "names": [
+                "Ours",
+                "Xia et al. 2020"
+            ],
+            "title": "Cuticle angle = 0\u00B0"
+        },
+        {
+            "elements": [
+                "straighthair_-5_may1.png",
+                "straighthair_2d.png"
+            ],
+            "enableInsets": true,
+            "insetSize": 400,
+            "insetZoom": 1.3,
+            "names": [
+                "Ours",
+                "Xia et al. 2020"
+            ],
+            "title": "Cuticle angle = -5\u00B0"
+        }
+    ];
+  
+    function setup() {
+        var content = document.getElementById("content");
+        for (var i = 0; i < imageBoxes.length; i++)
+            new ImageBox(content, imageBoxes[i]);
+    }
+</script>
+
+<body onload="setup();">
+    <div class="content" id="content">
+        <font size="4">
+            <h1>
+                Black hair render
+            </h1>
+            We compare renders of black hair between our method (Ours) and 
+            the tabulated 2D model from Xia et al. 2020 (Table 2D) [1]. We demonstrate that our model is able to handle the cuticle tilt and the highlight shifts downwards along the fiber when the cuticle angle changes, 
+            while Xia et al. 2020 does not handle cuticles, thus no shift in the highlight. The two models produce a similar overall highlight for the no cuticle case, but our model additionally produces colorful glints on the hair. 
+            <br>
+            <br>
+            You can hover over the labels to change the displayed image.
+            <br>
+            <br>
+            [1] Mengqi Xia, Bruce Walter, Eric Michielssen, David Bindel, and Steve Marschner. 2020.
+            A wave optics based fiber scattering model. ACM Transactions on Graphics (TOG)
+            39, 6 (2020), 1–16.
+        </font>
+    </div>
+</body>
+
+</html>
