@@ -1,0 +1,9 @@
+@article {10.1111:cgf.13883,
+journal = {Computer Graphics Forum},
+title = {{Gaussian Product Sampling for Rendering Layered Materials}},
+author = {Xia, Mengqi (Mandy) and Walter, Bruce and Hery, Christophe and Marschner, Steve},
+year = {2020},
+publisher = {© 2020 Eurographics ‐ The European Association for Computer Graphics and John Wiley & Sons Ltd},
+ISSN = {1467-8659},
+DOI = {10.1111/cgf.13883}
+}

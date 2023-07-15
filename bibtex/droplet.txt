@@ -1,0 +1,9 @@
+@article {10.1111:cgf.14893,
+journal = {Computer Graphics Forum},
+title = {{Iridescent Water Droplets Beyond Mie Scattering}},
+author = {Xia, Mengqi (Mandy) and Walter, Bruce and Marschner, Steve},
+year = {2023},
+publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
+ISSN = {1467-8659},
+DOI = {10.1111/cgf.14893}
+}

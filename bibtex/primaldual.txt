@@ -1,0 +1,9 @@
+@article{zosso2017efficient,
+  title={An efficient primal-dual method for the obstacle problem},
+  author={Zosso, Dominique and Osting, Braxton and Xia, Mandy and Osher, Stanley J},
+  journal={Journal of Scientific Computing},
+  volume={73},
+  pages={416--437},
+  year={2017},
+  publisher={Springer}
+}

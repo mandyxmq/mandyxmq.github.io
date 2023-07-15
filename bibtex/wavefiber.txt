@@ -1,0 +1,10 @@
+@article{xia2020wave,
+  title={A wave optics based fiber scattering model},
+  author={Xia, Mengqi and Walter, Bruce and Michielssen, Eric and Bindel, David and Marschner, Steve},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={39},
+  number={6},
+  pages={1--16},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
