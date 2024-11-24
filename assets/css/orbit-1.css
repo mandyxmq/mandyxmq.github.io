@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #2d7788;
+  color: #0572a5;
 }
 
 a:hover {
@@ -41,8 +41,8 @@ p {
 }
 
 .wrapper {
-  background: #42A8C0;
-  max-width: 960px;
+  background: #74a1c1;
+  max-width: 1120px;
   margin: 0 auto;
   margin-top: 30px;
   position: relative;
@@ -52,7 +52,7 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #42A8C0;
+  background: #74a1c1;
   position: absolute;
   right: 0;
   width: 240px;
@@ -67,7 +67,7 @@ p {
 
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #fff;
 }
@@ -187,7 +187,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #2d7788;
+  color: #0572a5;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -207,7 +207,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2d7788;
+  background: #0572a5;
   text-align: center;
   font-size: 16px;
   position: relative;
@@ -293,7 +293,7 @@ p {
 }
 
 .skillset .theme-progress-bar {
-  background: #68bacd;
+  background: #0572a5;
 }
 
 .footer {
